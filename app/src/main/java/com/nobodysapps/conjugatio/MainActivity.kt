@@ -8,18 +8,19 @@ import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import com.nobodysapps.conjugatio.screens.starts.StartFragment
 import com.nobodysapps.conjugatio.ui.theme.ConjugatioTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            ConjugatioTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(color = MaterialTheme.colors.background) {
-                    Greeting("Android")
-                }
-            }
+//            ConjugatioTheme {
+//                // A surface container using the 'background' color from the theme
+//                Surface(color = MaterialTheme.colors.background) {
+//                    Greeting("Android")
+//                }
+//            }
         }
     }
 }
@@ -33,6 +34,6 @@ fun Greeting(name: String) {
 @Composable
 fun DefaultPreview() {
     ConjugatioTheme {
-        Greeting("Android")
+//        Greeting("Android")
     }
 }
