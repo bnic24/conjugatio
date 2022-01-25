@@ -1,4 +1,4 @@
-package com.nobodysapps.conjugatio.screens.starts
+package com.nobodysapps.conjugatio.screens.start
 
 import android.os.Bundle
 import android.view.LayoutInflater
