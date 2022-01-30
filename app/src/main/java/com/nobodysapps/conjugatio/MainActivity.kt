@@ -10,7 +10,6 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.nobodysapps.conjugatio.navigation.setUpNavigation
-import com.nobodysapps.conjugatio.screens.start.StartFragment
 import com.nobodysapps.conjugatio.screens.start.startView
 import com.nobodysapps.conjugatio.ui.theme.ConjugatioTheme
 
