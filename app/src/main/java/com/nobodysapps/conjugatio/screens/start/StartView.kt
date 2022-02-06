@@ -15,7 +15,10 @@ import com.nobodysapps.conjugatio.ui.theme.ConjugatioTheme
 
 //@Preview(showBackground = true)
 @Composable
-fun startView(navController: NavController) {
+fun startView(
+    viewModel: StartViewModel,
+    navController: NavController
+) {
     Column(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
