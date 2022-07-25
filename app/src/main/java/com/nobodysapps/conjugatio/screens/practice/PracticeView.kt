@@ -11,7 +11,7 @@ import androidx.navigation.NavController
 import com.nobodysapps.conjugatio.navigation.NavDestination
 
 @Composable
-fun practiceView(viewModel: PracticeViewModel, navController: NavController) {
+fun PracticeView(viewModel: PracticeViewModel, navController: NavController) {
     Column(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,

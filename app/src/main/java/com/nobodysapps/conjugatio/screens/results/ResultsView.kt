@@ -11,7 +11,7 @@ import androidx.navigation.NavController
 import com.nobodysapps.conjugatio.navigation.NavDestination
 
 @Composable
-fun resultsView(viewModel: ResultsViewModel, navController: NavController) {
+fun ResultsView(viewModel: ResultsViewModel, navController: NavController) {
     Column(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,

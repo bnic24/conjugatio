@@ -5,20 +5,19 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.nobodysapps.conjugatio.screens.practice.practiceView
-import com.nobodysapps.conjugatio.screens.results.resultsView
-import com.nobodysapps.conjugatio.screens.selection.selectionView
-import com.nobodysapps.conjugatio.screens.start.StartViewModel
-import com.nobodysapps.conjugatio.screens.start.startView
+import com.nobodysapps.conjugatio.screens.practice.PracticeView
+import com.nobodysapps.conjugatio.screens.results.ResultsView
+import com.nobodysapps.conjugatio.screens.selection.SelectionView
+import com.nobodysapps.conjugatio.screens.start.StartView
 
 @Composable
 fun setUpNavigation() {
     val navController = rememberNavController()
     NavHost(navController = navController, startDestination = NavDestination.START_VIEW.route) {
-        composable(NavDestination.START_VIEW.route) { startView(viewModel(),  navController) }
-        composable(NavDestination.PRACTICE_VIEW.route) { practiceView(viewModel(), navController) }
-        composable(NavDestination.RESULTS_VIEW.route) { resultsView(viewModel(), navController) }
-        composable(NavDestination.SELECTION_VIEW.route) { selectionView(viewModel(), navController) }
+        composable(NavDestination.START_VIEW.route) { StartView(viewModel(),  navController) }
+        composable(NavDestination.PRACTICE_VIEW.route) { PracticeView(viewModel(), navController) }
+        composable(NavDestination.RESULTS_VIEW.route) { ResultsView(viewModel(), navController) }
+        composable(NavDestination.SELECTION_VIEW.route) { SelectionView(viewModel(), navController) }
     }
 }
 

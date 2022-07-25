@@ -13,7 +13,7 @@ import com.nobodysapps.conjugatio.navigation.NavDestination
 
 //@Preview(showBackground = true)
 @Composable
-fun selectionView(viewModel: SelectionViewModel, navController: NavController) {
+fun SelectionView(viewModel: SelectionViewModel, navController: NavController) {
     Column(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,

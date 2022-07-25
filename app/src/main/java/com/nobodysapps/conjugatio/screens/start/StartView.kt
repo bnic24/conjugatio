@@ -15,7 +15,7 @@ import com.nobodysapps.conjugatio.ui.theme.ConjugatioTheme
 
 //@Preview(showBackground = true)
 @Composable
-fun startView(
+fun StartView(
     viewModel: StartViewModel,
     navController: NavController
 ) {
