@@ -9,15 +9,17 @@ import com.nobodysapps.conjugatio.screens.practice.PracticeView
 import com.nobodysapps.conjugatio.screens.results.ResultsView
 import com.nobodysapps.conjugatio.screens.selection.SelectionView
 import com.nobodysapps.conjugatio.screens.start.StartView
+import com.nobodysapps.conjugatio.screens.start.StartViewModel
+import androidx.hilt.navigation.compose.hiltViewModel
 
 @Composable
 fun setUpNavigation() {
     val navController = rememberNavController()
     NavHost(navController = navController, startDestination = NavDestination.START_VIEW.route) {
-        composable(NavDestination.START_VIEW.route) { StartView(viewModel(),  navController) }
-        composable(NavDestination.PRACTICE_VIEW.route) { PracticeView(viewModel(), navController) }
-        composable(NavDestination.RESULTS_VIEW.route) { ResultsView(viewModel(), navController) }
-        composable(NavDestination.SELECTION_VIEW.route) { SelectionView(viewModel(), navController) }
+        composable(NavDestination.START_VIEW.route) { StartView(hiltViewModel(),  navController) }
+        composable(NavDestination.PRACTICE_VIEW.route) { PracticeView(hiltViewModel(), navController) }
+        composable(NavDestination.RESULTS_VIEW.route) { ResultsView(hiltViewModel(), navController) }
+        composable(NavDestination.SELECTION_VIEW.route) { SelectionView(hiltViewModel(), navController) }
     }
 }
 

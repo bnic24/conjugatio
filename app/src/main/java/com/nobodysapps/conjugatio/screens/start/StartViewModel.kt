@@ -1,6 +1,9 @@
 package com.nobodysapps.conjugatio.screens.start
 
 import androidx.lifecycle.ViewModel
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-class StartViewModel : ViewModel() {
+@HiltViewModel
+class StartViewModel @Inject constructor(): ViewModel() {
 }
